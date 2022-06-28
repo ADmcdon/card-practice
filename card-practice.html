@@ -1,0 +1,67 @@
+<!DOCTYPE Html>
+
+
+<html lang="en"><!--Lang attribute to specify what language doc is in, helps screen reader pronouce words-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<style>
+  body{
+    background-color: red;
+  }
+  .outerlayer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+  }
+  .innerlayer{
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    max-width: 250px;
+    width: 250px;
+    padding: 15px;
+  }
+  .luffy{
+    width:100%;
+    border-radius: 15px;
+  }
+  .luffy-info /*descendent used to target specific pieces of text*/
+     {
+    font-family: Outfit;
+    font-size: 15px;
+    text-align: center;
+    }
+
+    .desc h3 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    }
+
+    .desc p {
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+    }
+</style>
+  <head>
+<title>Card Practice</title>
+  </head>
+  <body>
+<div class="outerlayer">
+  <div class="innerlayer">
+    <div class="luffy-pic">
+      <img class="luffy" alt="Luffy" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OTEBskspacKZ47Jg25iUwQHaHa%26pid%3DApi&f=1">
+    </div>
+    <div class="Luffy-info">
+      <h2>Monkey D Luffy is a young pirate from the East Blue</h2> </br> He wants to become King of the pirates some day withe help of his crew
+      <p>He ate the mysterious devil fruit the gomu gomu no mi and now he's a rubber man</p>
+      <p> will it be enough to propel him to his goal??</p>
+    </div>
+  </div>
+ 
+ </div>
+ 
+  </body>
+</html>
