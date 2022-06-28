@@ -9,8 +9,8 @@
     background-color: red;
   }
   .outerlayer{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;      
     justify-content: center;
@@ -22,11 +22,21 @@
     border-radius: 15px;
     max-width: 250px;
     width: 250px;
+    height: 820px;
     padding: 15px;
+    margin-top: 20px;
   }
-  .luffy{
+  img{ /*img used instead of luffy class to target all images, useful for when you want to apply to all images insted of just one */
     width:100%;
     border-radius: 15px;
+  }
+  img:hover{
+    cursor: pointer;
+  }
+  
+    .crown,spyglass,tank{
+    width: 125px;
+    height: 125px;
   }
   .luffy-info /*descendent used to target specific pieces of text*/
      {
@@ -44,6 +54,13 @@
     color: hsl(220, 15%, 55%);
     font-weight: 400;
     }
+    .haki{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      
+      
+    }
 </style>
   <head>
 <title>Card Practice</title>
@@ -55,9 +72,26 @@
       <img class="luffy" alt="Luffy" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OTEBskspacKZ47Jg25iUwQHaHa%26pid%3DApi&f=1">
     </div>
     <div class="Luffy-info">
-      <h2>Monkey D Luffy is a young pirate from the East Blue</h2> </br> He wants to become King of the pirates some day withe help of his crew
+      <h2>Monkey D Luffy is a young pirate from the East Blue</h2> </br> He wants to become King of the pirates some day with help of his crew
       <p>He ate the mysterious devil fruit the gomu gomu no mi and now he's a rubber man</p>
       <p> will it be enough to propel him to his goal??</p>
+    </div>
+    <div class="haki">
+      <div class="conquerer">
+        <div class="kingcolor">
+          <img alt ="Crown"class="crown" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Z5DYziIBOUHsWvo_EZ-RQQHaF8%26pid%3DApi&f=1">
+        </div>
+      </div>
+      <div class="observation">
+        <div class="futuresite">
+          <img alt="Spyglass"class="spyglass" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uFnXPxsdtdpHTG_Sl3kynAHaHa%26pid%3DApi&f=1">
+        </div>
+      </div>
+      <div class="armament">
+        <div class="ryuo">
+          <img alt="Tank" class="tank" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.lfHUEHQmcllS34FuckLiOwHaHa%26pid%3DApi%26h%3D160&f=1">
+        </div>
+      </div>
     </div>
   </div>
  
